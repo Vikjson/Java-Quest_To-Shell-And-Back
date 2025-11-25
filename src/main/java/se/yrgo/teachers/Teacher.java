@@ -29,4 +29,5 @@ public class Teacher {
     public List<Question> getRandomQuestions(int amount) {
         return questions.subList(0, Math.min(amount, questions.size()));
     }
+    
 }
