@@ -5,18 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="29992195-880b-4958-a3de-794e5e78f8f8" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/se/yrgo/teachers/FileReader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/se/yrgo/teachers/Question.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/se/yrgo/teachers/Subject.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/se/yrgo/teachers/Teacher.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/se/yrgo/util/dev_tools_questions.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/se/yrgo/util/oop_questions.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/se/yrgo/util/rules.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/se/yrgo/player/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/se/yrgo/player/Player.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/.gitkeep" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/se/yrgo/game/Game.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/se/yrgo/game/Menu$Menu.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/se/yrgo/game/Menu.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/se/yrgo/main/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/se/yrgo/player/.gitkeep" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/se/yrgo/player/Player.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/se/yrgo/teachers/.gitkeep" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/se/yrgo/teachers/Teachers.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/.gitKeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/se/yrgo/teachers/Teachers.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
