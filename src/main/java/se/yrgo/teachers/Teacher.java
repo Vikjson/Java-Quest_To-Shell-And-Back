@@ -31,7 +31,7 @@ public class Teacher {
 
     /**
      * 
-     * The method that gives you any number of questions for a lecture.
+     * This method gives you any number of questions for a lecture.
      * 
      * @param amount the number of questions you want to ask this lecture.
      * @return number of questions equal to the parameter amount.
