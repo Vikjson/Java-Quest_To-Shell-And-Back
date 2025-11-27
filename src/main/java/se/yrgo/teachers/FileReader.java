@@ -23,10 +23,10 @@ public class FileReader {
                 String question = parts[0];
                 String answer = parts[1];
                 Subject category = Subject.valueOf(parts[2]);
-                int points = Integer.parseInt(parts[3]);
+                int knowledgePoints = Integer.parseInt(parts[3]);
                 String flavor = parts[4];
 
-                questions.add(new Question(question, answer, category, points, flavor));
+                questions.add(new Question(question, answer, category, knowledgePoints, flavor));
             }
 
         } catch (IOException e) {
