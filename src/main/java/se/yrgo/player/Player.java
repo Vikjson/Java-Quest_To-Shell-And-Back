@@ -42,13 +42,13 @@ public class Player {
         return money;
     }
 
-    public String getStats() {
+    public String getStatsToString() {
         return "Money: " + getMoney() + " Health: " + getHealth() + " Knowledge: " + getKnowledge();
     }
 
-    public void goToMenu(Menu menu) {
-        menu.startMenu();
-    }
+    //public void goToMenu(Menu menu) { SKA DEN VARA KVAR??
+    //    menu.startMenu();
+    //}
 
     public void gainKnowledge(int amount) {
         knowledge += amount;
