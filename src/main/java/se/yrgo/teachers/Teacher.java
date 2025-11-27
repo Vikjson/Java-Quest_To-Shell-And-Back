@@ -22,10 +22,20 @@ public class Teacher {
         return subject;
     }
 
+    /**
+     * shuffles the list of questions so that you don't allways get the same questions.
+     */
     public void shuffleQuestions() {
         Collections.shuffle(questions);
     }
 
+    /**
+     * 
+     * The method that gives you any number of questions for a lecture.
+     * 
+     * @param amount the number of questions you want to ask this lecture.
+     * @return number of questions equal to the parameter amount.
+     */
     public List<Question> getRandomQuestions(int amount) {
         return questions.subList(0, Math.min(amount, questions.size()));
     }
