@@ -46,10 +46,6 @@ public class Player {
         return "Money: " + getMoney() + " Health: " + getHealth() + " Knowledge: " + getKnowledge();
     }
 
-    //public void goToMenu(Menu menu) { SKA DEN VARA KVAR??
-    //    menu.startMenu();
-    //}
-
     public void gainKnowledge(int amount) {
         knowledge += amount;
         if (knowledge > MAX_KNOWLEDGE) {
