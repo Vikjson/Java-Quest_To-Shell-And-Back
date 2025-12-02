@@ -1,11 +1,13 @@
 package se.yrgo.player;
 
+//import se.yrgo.game.*;
+
 public class Player {
 
     private String name;
     private int health;
     private int knowledge;
-    private int money;
+    //private Menu menu;
 
     public static final int MAX_HEALTH = 100;
     public static final int MAX_KNOWLEDGE = 100;
@@ -61,8 +63,11 @@ public class Player {
 
     public void loseHealth(int amount) {
         health -= amount;
-        if (health < MIN_HEALTH) {
+        if (health <= MIN_HEALTH) {
             health = MIN_HEALTH;
+            System.out.println("Din hälsa har gått i botten, du klarar inte av att fortsätta dina studier.");
+            System.out.println("GAME OVER");
+            //menu.startMenu();
         }
     }
 
