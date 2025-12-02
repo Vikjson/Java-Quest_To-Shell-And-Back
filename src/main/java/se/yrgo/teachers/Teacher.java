@@ -40,7 +40,7 @@ public class Teacher {
         return questions.subList(0, Math.min(amount, questions.size()));
     }
 
-    public List<Question> getQuestions(int amount) {
+    public List<Question> getQuestions() {
         return questions;
     }
     
