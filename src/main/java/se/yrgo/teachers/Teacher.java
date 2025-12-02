@@ -31,17 +31,13 @@ public class Teacher {
 
     /**
      * 
-     * This method gives you any number of questions for a lecture.
+     * This method gives you any number of questions for a lecture if questions are random.
      * 
      * @param amount the number of questions you want to ask this lecture.
      * @return number of questions equal to the parameter amount.
      */
     public List<Question> getRandomQuestions(int amount) {
         return questions.subList(0, Math.min(amount, questions.size()));
-    }
-
-    public List<Question> getQuestions() {
-        return questions;
     }
     
 }
