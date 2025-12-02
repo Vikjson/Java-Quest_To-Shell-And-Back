@@ -42,8 +42,8 @@ public class Player {
         return money;
     }
 
-    public String getStatsToString() {
-        return "Money: " + getMoney() + " Health: " + getHealth() + " Knowledge: " + getKnowledge();
+    public String statsToString() {
+        return "Health: " + getHealth() + " Knowledge: " + getKnowledge();
     }
 
     public void gainKnowledge(int amount) {
