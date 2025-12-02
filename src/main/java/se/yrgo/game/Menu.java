@@ -33,7 +33,10 @@ public void startGame() {
 
     public void startMenu(){
         while (true) {
-        System.out.println("Welcome to $hell!");
+        System.out.println("~~~~~Welcome to $hell! ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
+        System.out.println(" ");
+        System.out.println("_____Välj ett alternativ:_____");
+        System.out.println(" ");
         System.out.println("[1] Starta spelet");
         System.out.println("[2] Läs spelregler");
         System.out.println("[3] Avsluta spelet");

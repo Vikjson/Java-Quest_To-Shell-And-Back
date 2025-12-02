@@ -1,8 +1,9 @@
 package se.yrgo.teachers;
 
+import java.io.BufferedReader;
 import java.io.IOException;
-import java.nio.file.Files;
-import java.nio.file.Path;
+import java.io.InputStream;
+import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -11,10 +12,16 @@ public class FileReader {
     public static List<Question> loadQuestions(String filename) {
         List<Question> questions = new ArrayList<>();
 
-        try {
-            List<String> lines = Files.readAllLines(Path.of(filename));
+        InputStream in = FileReader.class.getResourceAsStream("/" + filename);
+        if (in == null) {
+            System.out.println("Kunde inte läsa filen: " + filename);
+            return questions;
+        }
 
-            for (String line : lines) {
+        try (BufferedReader reader = new BufferedReader(new InputStreamReader(in))) {
+
+            String line;
+            while ((line = reader.readLine()) != null) {
                 if (line.isBlank())
                     continue;
 

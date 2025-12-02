@@ -1,6 +1,5 @@
 package se.yrgo.game;
 
-import java.sql.SQLOutput;
 import java.util.List;
 import java.util.Random;
 import java.util.Scanner;
@@ -22,8 +21,8 @@ public class Game {
         this.scan = scan;
         this.player = new Player("Player Name");
 
-        List<Question> oopQ = FileReader.loadQuestions("oop_questions.txt");
-        List<Question> devQ = FileReader.loadQuestions("devtools_questions.txt");
+        List<Question> oopQ = FileReader.loadQuestions("se/yrgo/util/oop_questions.txt");
+        List<Question> devQ = FileReader.loadQuestions("se/yrgo/util/dev_tools_questions.txt");
 
         this.hampus = new Teacher("Hampus", Subject.OOP, oopQ);
         this.nahid = new Teacher("Nahid", Subject.DEVTOOLS, devQ);
@@ -31,12 +30,13 @@ public class Game {
 
 
     public void startGame() {
-        //Player setName
+        //Player setName?
         for (int day = 1; day <= 4; day++) {
-            playDay(day); // loop för dag 1–5, alla val osv
+            playDay(day);
         }
-
+        System.out.println("------------------------------------------------------------------------------------------------------------");
         startExamDay();
+        System.out.println("------------------------------------------------------------------------------------------------------------");
     }
 
     private Teacher getRandomTeacher() {
@@ -49,11 +49,11 @@ public class Game {
 
     private void startLesson(boolean late) {
         Teacher teacher = getRandomTeacher();
-        System.out.println("Dagens lektion är " + teacher.getSubject() + " med " + teacher);
+        System.out.println("####### Dagens lektion är " + teacher.getSubject().toString() + " med " + teacher.getName().toString() + " #######");
 
         teacher.shuffleQuestions();
-        int amount = 3;
-        List<Question> questions = teacher.getRandomQuestions(amount);
+
+        List<Question> questions = teacher.getRandomQuestions(3);
 
         if (late) {
             questions = teacher.getRandomQuestions(1);
@@ -77,30 +77,46 @@ public class Game {
 
 
     public void playDay(int day) {
-
+        System.out.println(" ");
         morning(day);
+        System.out.println(" ");
+        System.out.println("Tryck enter för att fortsätta.");
+        String pause = scan.nextLine();
         lessonOne();
+        System.out.println(" ");
+        System.out.println("Tryck enter för att fortsätta.");
+        pause = scan.nextLine();
+        System.out.println("------------------------------------------------------------------------------------------------------------");
+        System.out.println(" ");
         lunch();
+        System.out.println(" ");
+        System.out.println("Tryck enter för att fortsätta.");
+        pause = scan.nextLine();
+        System.out.println("------------------------------------------------------------------------------------------------------------");
+        System.out.println(" ");
         evening();
+        System.out.println("Tryck enter för att fortsätta.");
+        pause = scan.nextLine();
     }
 
 
     public void morning(int day) {
 
-        System.out.println("Dag " + day);
-
-
+        System.out.println(" ***************** Dag " + day + " **************************************************************************");
+        System.out.println(" ");
+        System.out.println(player.statsToString());
+        System.out.println(" ");
         System.out.println("God morgon! Du är hemma och har just vaknat.");
-        System.out.println("Din hälsa är: " + player.getHealth() + " och din kunskapsnivå är: " + player.getKnowledge());
 
 
         if (!late) {
             System.out.println("Klockan är 5. Du mår skit, men fan vad du får pluggat! Och sen blir du heller inte, din jävla King!");
-
+            System.out.println(" ");
             player.loseHealth(10);
             player.gainKnowledge(10);
         } else {
             System.out.println("Du vaknar utvilad.");
+            System.out.println(" ");
             player.gainHealth(10);
             //random att försova sig if försov sig, late = true;
         }
@@ -112,19 +128,21 @@ public class Game {
 
         if (late) {
             System.out.println("Du missade bussen, nu igen! Nu kommer du för sent till lektionen och stapplar in 30 min efter föreläsningen startat. Pinsamt!");
-            //Random med Nahid eller Hampus
+            System.out.println(" ");
             startLesson(true); //Array med frågor 1-6 st. If late: starta på 2
         } else {
             System.out.println("Du är i god tid till lektionen.");
-            //Random med Nahid eller Hampus
+            System.out.println(" ");
             startLesson(false); //Array med frågor 1-6 st. startar på plats 0 i arrayen
         }
     }
 
     public void lunch() {
 
-        System.out.println("Din hälsa är: " + player.getHealth() + " och din kunskapsnivå är: " + player.getKnowledge());
+        System.out.println(player.statsToString());
+        System.out.println(" ");
         System.out.println("Dags för lunchrast! Vad vill du göra?");
+        System.out.println(" ");
         System.out.println("1. Skippa lunchen och plugga"); //Få mer info, typ 2 meningar om något pluggigt.
         System.out.println("2. Ät en redig lunch");
         System.out.println("3. Hiva i dig en kaffe snabbt och plugga");
@@ -141,21 +159,25 @@ public class Game {
             case "2" -> {
                 player.gainHealth(10);
                 System.out.println("Du äter en riktigt god lunch. Mums!");
+                System.out.println(" ");
             }
             case "3" -> {
                 player.gainKnowledge(10);
                 player.loseHealth(10);
                 System.out.println("FAN vad skarp du känner dig!");
+                System.out.println(" ");
             }
             case "4" -> {
                 player.gainHealth(10);
                 System.out.println("Åh vad skönt att bara lägga sig på soffan!");
+                System.out.println(" ");
             }
         }
 
         if (!input.equals("4")) {
 
             System.out.println("Du går på nästa lektion");
+            System.out.println(" ");
             lessonTwo();
 
         }
@@ -168,8 +190,10 @@ public class Game {
 
 
     public void evening() {
+        System.out.println(player.statsToString());
+        System.out.println(" ");
         System.out.println("Du är hemma efter en hård dag i skolan. Vad vill du göra nu?");
-        System.out.println("DIn hälsa är: " + player.getHealth() + " och din kunskapsnivå är: " + player.getKnowledge());
+        System.out.println(" ");
 
         System.out.println("1. Gör inget särskilt, går och lägger mig tidigt och Sover ut.");
         System.out.println("2. Stanna uppe sent och plugga hela kvällen");
@@ -182,31 +206,43 @@ public class Game {
 
         switch (input) {
             case "1" -> {
+                System.out.println("Åh vad härligt att vila! Self care here you come!");
+                System.out.println(" ");
                 player.gainHealth(20);
                 late = chanceOfBeingLate.nextInt(100) < 10;
             }
             case "2" -> {
+                System.out.println("Herre Gud vad smart du blir!");
+                System.out.println(" ");
                 player.gainKnowledge(20);
                 late = chanceOfBeingLate.nextInt(100) < 25;
             }
             case "3" -> {
+                System.out.println("Du är king i baren! Och dina dance moves är on top! Whoop whoop!");
+                System.out.println(" ");
                 player.loseHealth(20);
                 player.loseKnowledge(20);
                 late = true;
             }
-            case "4" -> late = false;
+            case "4" -> {
+                System.out.println("Bara ett avsnitt till! Eller kanske två. Okej, tre.");
+                System.out.println(" ");
+                late = false;
+            }
         }
     }
 
 
     public void startExamDay() {
-        System.out.println("Idag är det tenta!");
+        System.out.println("###### Idag är det tenta! #####");
+        System.out.println(" ");
         if (late) {
             System.out.println("Du har försovit dig och missade tentan. Du är körd!");
-            System.out.println("GAME OVER");
+            System.out.println(" ");
+            System.out.println("##### GAME OVER ###################################################################");
             menu.startMenu();
         } else {
-            startExam(); //Här ska avgöras om man vinner eller inte + gå till Menu.start();
+            startExam();
         }
 
     }
@@ -227,4 +263,3 @@ public class Game {
 }
 
 
-//Gör metod för prov med villkor för att klara baserat på poäng
