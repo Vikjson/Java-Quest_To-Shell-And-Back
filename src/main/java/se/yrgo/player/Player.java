@@ -1,7 +1,5 @@
 package se.yrgo.player;
 
-import se.yrgo.game.Menu;
-
 public class Player {
 
     private String name;
@@ -13,13 +11,11 @@ public class Player {
     public static final int MAX_KNOWLEDGE = 100;
     public static final int MIN_HEALTH = 0;
     public static final int MIN_KNOWLEDGE = 0;
-    public static final int MIN_MONEY = 0;
 
     public Player(String name) {
         this.name = name;
         this.health = MAX_HEALTH;
         this.knowledge = MIN_KNOWLEDGE;
-        this.money = 100;
     }
 
     public void setName(String name) {
@@ -36,10 +32,6 @@ public class Player {
 
     public int getKnowledge() {
         return knowledge;
-    }
-
-    public int getMoney() {
-        return money;
     }
 
     public String statsToString() {
@@ -71,13 +63,6 @@ public class Player {
         health -= amount;
         if (health < MIN_HEALTH) {
             health = MIN_HEALTH;
-        }
-    }
-
-    public void loseMoney(int amount) {
-        money -= amount;
-        if (money < MIN_MONEY) {
-            money = MIN_MONEY;
         }
     }
 
