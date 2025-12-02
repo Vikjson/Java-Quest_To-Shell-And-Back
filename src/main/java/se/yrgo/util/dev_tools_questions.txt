@@ -1,0 +1,40 @@
+Vilket Maven-kommando tar bort target-katalogen och kompilerar projektet på nytt?
+1. mvn clean package
+2. mvn compile
+3. mvn install;1;DEVTOOLS;15;Bra jobbat, du kan verkligen det här med Maven-kommandon!;
+Vilken fil beskriver ett Maven-projekts beroenden och plugins?
+1. settings.xml
+2. pom.xml
+3. build.gradle;2;DEVTOOLS;10;Snyggt! Du har koll på hur Maven-projekt är uppbyggda!;
+Vilken Gradle-fil används när man skriver Gradle i Kotlin?
+1. build.gradle
+2. gradle.settings
+3. build.gradle.kts;3;DEVTOOLS;10;Bra! Du verkar ha örnkoll på Gradle och dess syntax!;
+Vilket kommando installerar alla beroenden i ett Maven-projekt?
+1. mvn install
+2. mvn fetch
+3. mvn deps;1;DEVTOOLS;10;Strålande! Du vet hur Maven hanterar beroenden!;
+Vad gör kommandot 'git status'?
+1. Visar aktuellt repositorys alla commits
+2. Visar förändringar i arbetskatalogen
+3. Pushar ändringar till remote;2;DEVTOOLS;10;Bra jobbat, du vet hur man navigerar Git som ett proffs!;
+Vad gör kommandot 'git restore --staged <fil>'?
+1. Tar bort filen permanent
+2. Flyttar filen från staged till unstaged
+3. Återställer filen till tidigare commit;2;DEVTOOLS;15;Riktigt bra! Du förstår hur staging-området fungerar i Git!;
+Vad gör 'docker ps'?
+1. Startar en container
+2. Visar aktiva containers
+3. Visar Docker-versionen;2;DEVTOOLS;10;Snyggt! Du har koll på Docker-kommandon!;
+Vad betyder det om ett Maven-plugin ligger under <build>-sektionen?
+1. Det körs automatiskt vid varje commit
+2. Det används av Maven under byggprocessen
+3. Det installeras som ett globalt plugin;2;DEVTOOLS;15;Bra jobbat! Du förstår hur Maven bygger upp sin pipeline!;
+Vad gör 'mvn clean install'?
+1. Rensar target, kompilerar och installerar artefakten i lokala repositoryt
+2. Startar en testserver
+3. Installerar Java;1;DEVTOOLS;20;Imponerande! Du har full koll på ett av Mavens viktigaste kommandon!;
+Vilket alternativ beskriver en Git-branch korrekt?
+1. En fristående tidslinje av commits
+2. Ett program som startar Git
+3. En lokal kopia av HEAD;1;DEVTOOLS;15;Fantastiskt! Du kan verkligen det här med versionshantering!
