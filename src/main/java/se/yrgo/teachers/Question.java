@@ -7,3 +7,4 @@ public record Question(
         int points,
         String flavorText) {
 }
+
