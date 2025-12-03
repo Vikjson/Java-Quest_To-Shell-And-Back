@@ -2,6 +2,10 @@ package se.yrgo.teachers;
 
 import java.util.*;
 
+/**
+ * Represents a teacher who can ask questions from a predefined list.
+ * Holds the teacher's name, subject, and collection of questions.
+ */
 public class Teacher {
 
     private final String name;
