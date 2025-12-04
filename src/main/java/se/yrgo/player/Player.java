@@ -1,25 +1,23 @@
 package se.yrgo.player;
 
-import se.yrgo.game.Menu;
+//import se.yrgo.game.*;
 
 public class Player {
 
     private String name;
     private int health;
     private int knowledge;
-    private int money;
+    //private Menu menu;
 
     public static final int MAX_HEALTH = 100;
     public static final int MAX_KNOWLEDGE = 100;
     public static final int MIN_HEALTH = 0;
     public static final int MIN_KNOWLEDGE = 0;
-    public static final int MIN_MONEY = 0;
 
     public Player(String name) {
         this.name = name;
         this.health = MAX_HEALTH;
         this.knowledge = MIN_KNOWLEDGE;
-        this.money = 100;
     }
 
     public void setName(String name) {
@@ -38,17 +36,9 @@ public class Player {
         return knowledge;
     }
 
-    public int getMoney() {
-        return money;
+    public String statsToString() {
+        return "Health: " + getHealth() + " Knowledge: " + getKnowledge();
     }
-
-    public String getStatsToString() {
-        return "Money: " + getMoney() + " Health: " + getHealth() + " Knowledge: " + getKnowledge();
-    }
-
-    //public void goToMenu(Menu menu) { SKA DEN VARA KVAR??
-    //    menu.startMenu();
-    //}
 
     public void gainKnowledge(int amount) {
         knowledge += amount;
@@ -73,15 +63,11 @@ public class Player {
 
     public void loseHealth(int amount) {
         health -= amount;
-        if (health < MIN_HEALTH) {
+        if (health <= MIN_HEALTH) {
             health = MIN_HEALTH;
-        }
-    }
-
-    public void loseMoney(int amount) {
-        money -= amount;
-        if (money < MIN_MONEY) {
-            money = MIN_MONEY;
+            System.out.println("Din hälsa har gått i botten, du klarar inte av att fortsätta dina studier.");
+            System.out.println("GAME OVER");
+            //menu.startMenu();
         }
     }
 
