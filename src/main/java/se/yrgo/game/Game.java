@@ -21,8 +21,8 @@ public class Game {
         this.scan = scan;
         this.player = new Player("Player Name");
 
-        List<Question> oopQ = FileReader.loadQuestions("se/yrgo/util/oop_questions.txt");
-        List<Question> devQ = FileReader.loadQuestions("se/yrgo/util/dev_tools_questions.txt");
+        List<Question> oopQ = FileReader.loadQuestions("oop_questions.txt");
+        List<Question> devQ = FileReader.loadQuestions("dev_tools_questions.txt");
 
         this.hampus = new Teacher("Hampus", Subject.OOP, oopQ);
         this.nahid = new Teacher("Nahid", Subject.DEVTOOLS, devQ);
