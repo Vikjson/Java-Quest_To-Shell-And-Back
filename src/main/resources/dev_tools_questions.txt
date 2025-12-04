@@ -1,0 +1,10 @@
+Vilket Maven-kommando tar bort target-katalogen och kompilerar projektet på nytt?\n1. mvn clean package\n2. mvn compile\n3. mvn install;1;DEVTOOLS;15;Bra jobbat, du kan verkligen det här med Maven-kommandon!
+Vilken fil beskriver ett Maven-projekts beroenden och plugins?\n1. settings.xml\n2. pom.xml\n3. build.gradle;2;DEVTOOLS;10;Snyggt! Du har koll på hur Maven-projekt är uppbyggda!
+Vilken Gradle-fil används när man skriver Gradle i Kotlin?\n1. build.gradle\n2. gradle.settings\n3. build.gradle.kts;3;DEVTOOLS;10;Bra! Du verkar ha örnkoll på Gradle och dess syntax!
+Vilket kommando installerar alla beroenden i ett Maven-projekt?\n1. mvn install\n2. mvn fetch\n3. mvn deps;1;DEVTOOLS;10;Strålande! Du vet hur Maven hanterar beroenden!
+Vad gör kommandot 'git status'?\n1. Visar aktuellt repositorys alla commits\n2. Visar förändringar i arbetskatalogen\n3. Pushar ändringar till remote;2;DEVTOOLS;10;Bra jobbat, du vet hur man navigerar Git som ett proffs!
+Vad gör kommandot 'git restore --staged <fil>'?\n1. Tar bort filen permanent\n2. Flyttar filen från staged till unstaged\n3. Återställer filen till tidigare commit;2;DEVTOOLS;15;Riktigt bra! Du förstår hur staging-området fungerar i Git!
+Vad gör 'docker ps'?\n1. Startar en container\n2. Visar aktiva containers\n3. Visar Docker-versionen;2;DEVTOOLS;10;Snyggt! Du har koll på Docker-kommandon!
+Vad betyder det om ett Maven-plugin ligger under <build>-sektionen?\n1. Det körs automatiskt vid varje commit\n2. Det används av Maven under byggprocessen\n3. Det installeras som ett globalt plugin;2;DEVTOOLS;15;Bra jobbat! Du förstår hur Maven bygger upp sin pipeline!
+Vad gör 'mvn clean install'?\n1. Rensar target, kompilerar och installerar artefakten i lokala repositoryt\n2. Startar en testserver\n3. Installerar Java;1;DEVTOOLS;20;Imponerande! Du har full koll på ett av Mavens viktigaste kommandon!
+Vilket alternativ beskriver en Git-branch korrekt?\n1. En fristående tidslinje av commits\n2. Ett program som startar Git\n3. En lokal kopia av HEAD;1;DEVTOOLS;15;Fantastiskt! Du kan verkligen det här med versionshantering!
