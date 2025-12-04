@@ -14,8 +14,8 @@ public class Main {
             Menu menu = new Menu(scan);
             menu.startMenu();
 
-                   
-            }
+
+        }
 
 
 
