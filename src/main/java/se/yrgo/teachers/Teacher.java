@@ -27,7 +27,7 @@ public class Teacher {
     }
 
     /**
-     * shuffles the list of questions so that you don't allways get the same questions.
+     * Shuffles the internal list of questions so that the order becomes random.
      */
     public void shuffleQuestions() {
         Collections.shuffle(questions);
@@ -35,7 +35,9 @@ public class Teacher {
 
     /**
      * 
-     * This method gives you any number of questions for a lecture if questions are random.
+     * Returns a set number of questions starting from the beginning of the
+     * shuffled question list. The returned number will never exceed the size
+     * of the available questions.
      * 
      * @param amount the number of questions you want to ask this lecture.
      * @return number of questions equal to the parameter amount.
@@ -43,5 +45,5 @@ public class Teacher {
     public List<Question> getRandomQuestions(int amount) {
         return questions.subList(0, Math.min(amount, questions.size()));
     }
-    
+
 }

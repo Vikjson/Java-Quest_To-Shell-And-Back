@@ -14,7 +14,7 @@ import java.util.List;
 public class FileReader {
 
     /**
-     * Converts escaped newline sequences ("\\n") into actual line breaks.
+     * Converts escaped newline sequences into actual line breaks.
      * 
      * @param text the input text that may contain escaped newline markers.
      * @return the text with all escaped newlines markers replaced by real line
