@@ -18,10 +18,15 @@ public class Player {
         this.name = name;
         this.health = MAX_HEALTH;
         this.knowledge = MIN_KNOWLEDGE;
+        this.menu = menu;
     }
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public void setMenu(Menu menu) {
+        this.menu = menu;
     }
 
     public String getName() {

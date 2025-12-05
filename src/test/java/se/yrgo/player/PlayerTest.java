@@ -1,11 +1,13 @@
 package se.yrgo.player;
 
+import se.yrgo.game.Menu;
 import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import java.io.ByteArrayOutputStream;
 import java.io.PrintStream;
+import java.util.Scanner;
 
 class PlayerTest {
 
@@ -14,6 +16,13 @@ class PlayerTest {
     @BeforeEach
     void setUp() {
         player = new Player("TestPlayerName");
+        Menu menu = new Menu(new Scanner(System.in)) {
+            @Override
+            public void startMenu() {
+
+            }
+        };
+        player.setMenu(menu);
     }
 
     @Test
