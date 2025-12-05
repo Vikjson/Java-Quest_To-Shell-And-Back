@@ -1,0 +1,10 @@
+Vad betyder det att en klass implementerar ett interface?%n1. Klassen ärver alla metoder automatiskt%n2. Klassen lovar att implementera interfacets metoder%n3. Klassen blir abstrakt;2;OOP;10;Snyggt! Du förstår hur interface fungerar i Java!
+Vad är ett objekt i Java?%n1. En instans av en klass%n2. En typ av interface%n3. Ett paket;1;OOP;10;Bra jobbat, objektorientering sitter ju som en smäck!
+Vad är syftet med en konstruktor?%n1. Att skapa ett nytt objekt och initiera variabler%n2. Att kompilera klassen%n3. Att ta bort objekt från minnet;1;OOP;10;Yes! Konstruktorer är inga problem för dig!
+Vad är inkapsling?%n1. Att dölja data och exponera beteende via metoder%n2. Att kombinera flera interface%n3. Att skapa nya trådar;1;OOP;15;Riktigt bra – inkapsling är en kärna i OOP och du nailade det!
+Vad är arv i Java?%n1. När en klass tar bort metoder från en annan klass%n2. När en klass återanvänder kod från en förälderklass%n3. När man kopierar objekt manuellt;2;OOP;10;Snyggt, du kan det här med arv!
+Vad betyder 'final' på en variabel?%n1. Den kan inte ändras efter första tilldelningen%n2. Den är global%n3. Den är privat;1;OOP;10;Kanon, du vet hur man säkrar värden i Java!
+Vad är polymorfism?%n1. Att flera objekt kan få olika typer slumpmässigt%n2. Att en metod kan bete sig olika beroende på objektet som anropar den%n3. Att en klass kan skapa flera interface;2;OOP;20;Imponerande! Polymorfism är högnivå-OOP och du satte den!
+Vad är en abstrakt klass?%n1. En klass som inte kan instansieras%n2. En klass som saknar variabler%n3. En klass som är helt tom;1;OOP;15;Bra jobbat! Du har koll på abstrakta koncept!
+Vad är syftet med 'this' i Java?%n1. Att skapa nya objekt%n2. Att referera till det aktuella objektet%n3. Att radera variabler;2;OOP;10;Strålande! Du förstår hur this används korrekt!
+Vad är ett record i Java?%n1. En klass som fokuserar på immutable data och auto-genererar metoder%n2. En typ av enum%n3. Ett interface med extra steg;1;OOP;20;Starkt jobbat! Du har grepp om moderna Java-begrepp!
