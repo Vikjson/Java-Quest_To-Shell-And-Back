@@ -63,7 +63,7 @@ public class Game {
     }
 
     private void askQuestion(Question q) {
-        System.out.println(q.question());
+        System.out.printf("%n" + q.question() + "%n");
         String answer = scan.nextLine();
 
         if (answer.equalsIgnoreCase(q.answer())) {
