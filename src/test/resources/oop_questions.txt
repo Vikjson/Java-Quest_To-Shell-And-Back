@@ -1,0 +1,4 @@
+Vad betyder det att en klass implementerar ett interface?\n1. Klassen ärver alla metoder automatiskt\n2. Klassen lovar att implementera interfacets metoder\n3. Klassen blir abstrakt;2;OOP;10;Snyggt! Du förstår hur interface fungerar i Java!
+
+Vad är ett objekt i Java?\n1. En instans av en klass\n2. En typ av interface\n3. Ett paket;1;OOP;10;Bra jobbat, objektorientering sitter ju som en smäck!
+
