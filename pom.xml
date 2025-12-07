@@ -23,7 +23,7 @@
             <configuration>
                 <archive>
                     <manifest>
-                        <mainClass>se.yrgo.Main</mainClass>
+                        <mainClass>se.yrgo.main.Main</mainClass>
                     </manifest>
                 </archive>
             </configuration>
