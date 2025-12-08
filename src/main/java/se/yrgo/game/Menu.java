@@ -105,8 +105,7 @@ public class Menu {
 
                 The Final Exam:
                  To qualify for the exam, your HP must be above zero and your XP must
-                 meet the required threshold. The exam uses questions from both subjects,
-                 is more difficult, and offers higher XP rewards.
+                 meet the required threshold.
 
                 Failure Conditions:
                  You fail the week if your HP reaches zero or if you do not meet the
