@@ -13,7 +13,7 @@ import se.yrgo.teachers.*;
  * The game loops over 4 days and finally ends with the exam, where the game ends and you either win or lose
  * depending on your scores. Each day in game consists of morning, lessons, lunch, and evening.
  * The player gets to chose activities that affect the players points received or taken away.
- *
+ * <p>
  * Questions are loaded from two text files, creates teachers depending on the subject and
  * lets the player answer questions, rewarding points if correctly answered.
  */
@@ -31,9 +31,9 @@ public class Game {
      * @param scan the scanner used for user input.
      * @param menu the main menu for starting the game.
      */
-    public Game(Scanner scan, Menu menu) {
+    public Game(Scanner scan, Menu menu, Player player) {
         this.scan = scan;
-        this.player = new Player("Player Name");
+        this.player = player;
 
         List<Question> oopQ = FileReader.loadQuestions("oop_questions.txt");
         List<Question> devQ = FileReader.loadQuestions("dev_tools_questions.txt");
@@ -57,6 +57,7 @@ public class Game {
 
     /**
      * Returns one of the two teachers at random.
+     *
      * @return a randomly selected Teacher.
      */
     private Teacher getRandomTeacher() {
@@ -69,6 +70,7 @@ public class Game {
 
     /**
      * Starts lesson and decides how many questions the player recieves. (3 if on time and 1 if player is late)
+     *
      * @param late decides wether the player is late for the lesson.
      */
     private void startLesson(boolean late) {
@@ -321,11 +323,18 @@ public class Game {
         } else {
             System.out.println("OUTSTANDING! Du fick MVG+++ trots att betyget inte ens finns och både Nahid och Hampus vill ha din autograf!");
         }
-        {
 
-        }
     }
+
+    public boolean getIsLate() {
+        return late;
+
+
+    }
+
 }
+
+
 
 
 
