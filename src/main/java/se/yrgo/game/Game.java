@@ -113,11 +113,11 @@ public class Game {
             System.out.println("Klockan är 5. Du mår skit, men fan vad du får pluggat! Och sen blir du heller inte, din jävla King!");
             System.out.println(" ");
             player.loseHealth(10);
-            player.gainKnowledge(10);
+            player.gainKnowledge(5);
         } else {
             System.out.println("Du vaknar utvilad.");
             System.out.println(" ");
-            player.gainHealth(10);
+            player.gainHealth(5);
             //random att försova sig if försov sig, late = true;
         }
 
@@ -152,23 +152,24 @@ public class Game {
 
         switch (input) {
             case "1" -> {
-                player.gainKnowledge(10);
-                player.loseHealth(10);
+                player.gainKnowledge(3);
+                player.loseHealth(5);
                 System.out.println("Du pluggar som en gud! Men magen kurrar.");
             }
             case "2" -> {
-                player.gainHealth(10);
+                player.gainHealth(5);
                 System.out.println("Du äter en riktigt god lunch. Mums!");
                 System.out.println(" ");
             }
             case "3" -> {
-                player.gainKnowledge(10);
-                player.loseHealth(10);
+                player.gainKnowledge(5);
+                player.loseHealth(5);
                 System.out.println("FAN vad skarp du känner dig!");
                 System.out.println(" ");
             }
             case "4" -> {
-                player.gainHealth(10);
+                player.gainHealth(5);
+                player.loseKnowledge(5);
                 System.out.println("Åh vad skönt att bara lägga sig på soffan!");
                 System.out.println(" ");
             }
@@ -208,20 +209,21 @@ public class Game {
             case "1" -> {
                 System.out.println("Åh vad härligt att vila! Self care here you come!");
                 System.out.println(" ");
-                player.gainHealth(20);
+                player.gainHealth(5);
                 late = chanceOfBeingLate.nextInt(100) < 10;
             }
             case "2" -> {
                 System.out.println("Herre Gud vad smart du blir!");
                 System.out.println(" ");
-                player.gainKnowledge(20);
+                player.gainKnowledge(8);
+                player.loseHealth(5);
                 late = chanceOfBeingLate.nextInt(100) < 25;
             }
             case "3" -> {
                 System.out.println("Du är king i baren! Och dina dance moves är on top! Whoop whoop!");
                 System.out.println(" ");
-                player.loseHealth(20);
-                player.loseKnowledge(20);
+                player.loseHealth(10);
+                player.loseKnowledge(10);
                 late = true;
             }
             case "4" -> {
@@ -249,17 +251,23 @@ public class Game {
 
     public void startExam() {
 
-        if (player.getKnowledge() <= 60) {
+        if (player.getKnowledge() <= 49) {
+            System.out.println("Nae, det här gick inget vidare. Du failade hårt och inser att du borde ha pluggat mer.");
+            System.out.println("GAME OVER");
+        } else if (player.getKnowledge() <= 60) {
             System.out.println("Hurra! Du klarade provet. Du fick G.");
         } else if (player.getKnowledge() <= 80) {
             System.out.println("Herre gud, vilken stjärna du är! Du inte bara klarade provet, du fick VG! Grattis!");
-        } else if (player.getKnowledge() <= 49) {
-            System.out.println("Nae, det här gick inget vidare. Du failade hårt och inser att du borde ha pluggat mer.");
-            System.out.println("GAME OVER");
+        } else {
+            System.out.println("OUTSTANDING! Du fick MVG+++ trots att betyget inte ens finns och både Nahid och Hampus vill ha din autograf!");
+        }
+        {
+
         }
     }
-
-
 }
+
+
+
 
 
