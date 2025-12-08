@@ -8,6 +8,15 @@ import se.yrgo.player.*;
 import se.yrgo.teachers.*;
 
 
+/**
+ * The Game class represent the main game loop for the Yrgo school simulator game Java Quest To $hell and Back.
+ * The game loops over 4 days and finally ends with the exam, where the game ends and you either win or lose
+ * depending on your scores. Each day in game consists of morning, lessons, lunch, and evening.
+ * The player gets to chose activities that affect the players points received or taken away.
+ *
+ * Questions are loaded from two text files, creates teachers depending on the subject and
+ * lets the player answer questions, rewarding points if correctly answered.
+ */
 public class Game {
     private final Scanner scan;
     private final Player player;
@@ -17,6 +26,11 @@ public class Game {
     private Random randomTeacher = new Random();
     private Menu menu;
 
+    /**
+     *
+     * @param scan the scanner used for user input.
+     * @param menu the main menu for starting the game.
+     */
     public Game(Scanner scan, Menu menu) {
         this.scan = scan;
         this.player = new Player("Player Name");
@@ -28,7 +42,9 @@ public class Game {
         this.nahid = new Teacher("Nahid", Subject.DEVTOOLS, devQ);
     }
 
-
+    /**
+     * Starts the full game loop of four days + exam day.
+     */
     public void startGame() {
         //Player setName?
         for (int day = 1; day <= 4; day++) {
@@ -39,6 +55,10 @@ public class Game {
         System.out.println("------------------------------------------------------------------------------------------------------------");
     }
 
+    /**
+     * Returns one of the two teachers at random.
+     * @return a randomly selected Teacher.
+     */
     private Teacher getRandomTeacher() {
         if (randomTeacher.nextBoolean()) {
             return hampus;
@@ -47,6 +67,10 @@ public class Game {
         }
     }
 
+    /**
+     * Starts lesson and decides how many questions the player recieves. (3 if on time and 1 if player is late)
+     * @param late decides wether the player is late for the lesson.
+     */
     private void startLesson(boolean late) {
         Teacher teacher = getRandomTeacher();
         System.out.println("####### Dagens lektion är " + teacher.getSubject().toString() + " med " + teacher.getName().toString() + " #######");
@@ -62,6 +86,12 @@ public class Game {
         for (Question q : questions) askQuestion(q);
     }
 
+    /**
+     * Ask one single question during a lesson. Checks if player answer correctly or not and
+     * updates player score accordingly
+     *
+     * @param q the question asked
+     */
     private void askQuestion(Question q) {
         System.out.printf("%n" + q.question() + "%n");
         String answer = scan.nextLine();
@@ -76,6 +106,12 @@ public class Game {
     }
 
 
+    /**
+     * Plays one full day concisting of: morning, lesson, lunch, lesson, evening.
+     * Adds some pauses between events for better readability.
+     *
+     * @param day the number of the current day.
+     */
     public void playDay(int day) {
         System.out.println(" ");
         morning(day);
@@ -100,6 +136,11 @@ public class Game {
     }
 
 
+    /**
+     * Handles all morning events, showing player points and wether they have overslept.
+     *
+     * @param day the number of the current day.
+     */
     public void morning(int day) {
 
         System.out.println(" ***************** Dag " + day + " **************************************************************************");
@@ -123,6 +164,10 @@ public class Game {
 
     }
 
+
+    /**
+     * Starts the first lesson of the day. Handles consequences if late.
+     */
     public void lessonOne() {
 
 
@@ -137,6 +182,10 @@ public class Game {
         }
     }
 
+    /**
+     * Handles lunch choices and how player stats is affected by each choice.
+     * If player goes home, second lesson is skipped.
+     */
     public void lunch() {
 
         System.out.println(player.statsToString());
@@ -184,12 +233,17 @@ public class Game {
         }
     }
 
+    /**
+     * Starts the second lesson of the day. Player can't be late for this lesson.
+     */
     public void lessonTwo() {
         startLesson(false);
 
     }
 
-
+    /**
+     * Handles the players choices at evening, determining chances of being late the next morning.
+     */
     public void evening() {
         System.out.println(player.statsToString());
         System.out.println(" ");
@@ -234,7 +288,9 @@ public class Game {
         }
     }
 
-
+    /**
+     * Starts the exam event. If player is late, exam fails without starting.
+     */
     public void startExamDay() {
         System.out.println("###### Idag är det tenta! #####");
         System.out.println(" ");
@@ -249,6 +305,10 @@ public class Game {
 
     }
 
+    /**
+     * Evaluates the player stats of knowlege points and health points to chec the result of the exam.
+     * Player may fail, get G, VG or MVG+++.
+     */
     public void startExam() {
 
         if (player.getKnowledge() <= 49) {
