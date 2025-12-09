@@ -1,4 +1,4 @@
-package game;
+package se.yrgo.game;
 
 import org.junit.jupiter.api.Test;
 import se.yrgo.game.Game;
