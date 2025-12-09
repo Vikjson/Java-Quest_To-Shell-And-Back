@@ -25,15 +25,38 @@ public class Game {
     private Teacher nahid;
     private Random randomTeacher = new Random();
     private Menu menu;
+    private boolean testGame; //For JUnit testing only
 
     /**
      *
      * @param scan the scanner used for user input.
      * @param menu the main menu for starting the game.
+     * @param player the player for this game.
      */
     public Game(Scanner scan, Menu menu, Player player) {
         this.scan = scan;
+        this.menu = menu;
         this.player = player;
+
+        List<Question> oopQ = FileReader.loadQuestions("oop_questions.txt");
+        List<Question> devQ = FileReader.loadQuestions("dev_tools_questions.txt");
+
+        this.hampus = new Teacher("Hampus", Subject.OOP, oopQ);
+        this.nahid = new Teacher("Nahid", Subject.DEVTOOLS, devQ);
+    }
+
+    /**
+     * Constructor for testing only
+     * @param scan the scanner used for user input.
+     * @param menu the main menu for starting the game.
+     * @param player the player for this game.
+     * @param testGame if true, shows this is a test game and will be interrupted after day1.
+     */
+    public Game(Scanner scan, Menu menu, Player player, boolean testGame) {
+        this.scan = scan;
+        this.menu = menu;
+        this.player = player;
+        this.testGame = testGame;
 
         List<Question> oopQ = FileReader.loadQuestions("oop_questions.txt");
         List<Question> devQ = FileReader.loadQuestions("dev_tools_questions.txt");
@@ -49,6 +72,10 @@ public class Game {
         //Player setName?
         for (int day = 1; day <= 4; day++) {
             playDay(day);
+
+            if (testGame){
+                break;
+            }
         }
         System.out.println("------------------------------------------------------------------------------------------------------------");
         startExamDay();

@@ -93,10 +93,12 @@ public class GameTest {
         Scanner scan = mock(Scanner.class);
         Menu menu = mock(Menu.class);
         Player player = new Player("Player");
+        boolean testGame = true;
 
-        when(scan.nextLine()).thenReturn("");
 
-        Game game = spy(new Game(scan, menu, player));
+        when(scan.nextLine()).thenReturn(" ");
+
+        Game game = spy(new Game(scan, menu, player, testGame));
 
         String out = captureOutput(game::startGame);
 
