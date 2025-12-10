@@ -1,6 +1,6 @@
 # Java Quest To $hell And Back
 
-!! Run the script runGame.sh in root cataloge to start the program. !!
+!! Run the script runGame.sh in catalogue /Java-Quest_To-shell-And-Back to start the program. !!
 
 How to run the script:
 
