@@ -6,8 +6,6 @@ import java.util.List;
 
 import org.junit.jupiter.api.Test;
 
-import se.yrgo.teachers.*;
-
 public class TeacherTest {
     private Question q1 = new Question("Q1", "1", Subject.OOP, 10, "hej");
     private Question q2 = new Question("Q2", "2", Subject.OOP, 10, "hej");
