@@ -23,6 +23,7 @@ public class Menu {
      */
     public Menu(Scanner scan) {
         this.scan = scan;
+        this.player = new Player("Player 1");
     }
 
     /**
@@ -40,6 +41,7 @@ public class Menu {
      * Starts a new game, initiating the game loop of the Game class.
      */
     public void startGame() {
+       this.player = new Player("Player 1");
         Game game = new Game(scan, this, player);
         game.startGame();
     }

@@ -109,7 +109,6 @@ public class Player {
             health = MIN_HEALTH;
             System.out.println("Din hälsa har gått i botten, du klarar inte av att fortsätta dina studier.");
             System.out.println("GAME OVER");
-            menu.startMenu();
         }
     }
 

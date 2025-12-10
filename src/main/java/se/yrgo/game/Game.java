@@ -27,10 +27,11 @@ public class Game {
     private Menu menu;
     private boolean testGame; //For JUnit testing only
 
+
     /**
      *
-     * @param scan the scanner used for user input.
-     * @param menu the main menu for starting the game.
+     * @param scan   the scanner used for user input.
+     * @param menu   the main menu for starting the game.
      * @param player the player for this game.
      */
     public Game(Scanner scan, Menu menu, Player player) {
@@ -47,9 +48,10 @@ public class Game {
 
     /**
      * Constructor for testing only
-     * @param scan the scanner used for user input.
-     * @param menu the main menu for starting the game.
-     * @param player the player for this game.
+     *
+     * @param scan     the scanner used for user input.
+     * @param menu     the main menu for starting the game.
+     * @param player   the player for this game.
      * @param testGame if true, shows this is a test game and will be interrupted after day1.
      */
     public Game(Scanner scan, Menu menu, Player player, boolean testGame) {
@@ -67,19 +69,36 @@ public class Game {
 
     /**
      * Starts the full game loop of four days + exam day.
+     * As long as player health is over 0.
      */
     public void startGame() {
-        //Player setName?
-        for (int day = 1; day <= 4; day++) {
-            playDay(day);
 
-            if (testGame){
-                break;
+        while (player.getHealth() > 0) {
+
+            for (int day = 1; day <= 4; day++) {
+
+                if (player.getHealth() <= 0) {
+                    break;
+                }
+
+                playDay(day);
+
+                if (testGame) {
+                    break;
+                }
+
+                if (player.getHealth() <= 0) {
+                    menu.startMenu();
+                    return;
+                }
             }
+            System.out.println("------------------------------------------------------------------------------------------------------------");
+
+
+            startExamDay();
+            System.out.println("------------------------------------------------------------------------------------------------------------");
+            menu.startMenu();
         }
-        System.out.println("------------------------------------------------------------------------------------------------------------");
-        startExamDay();
-        System.out.println("------------------------------------------------------------------------------------------------------------");
     }
 
     /**
@@ -112,7 +131,12 @@ public class Game {
             questions = teacher.getRandomQuestions(1);
         }
 
-        for (Question q : questions) askQuestion(q);
+        for (Question q : questions) {
+            if (player.getHealth() <= 0) {
+                return;
+            }
+            askQuestion(q);
+        }
     }
 
     /**
@@ -142,24 +166,33 @@ public class Game {
      * @param day the number of the current day.
      */
     public void playDay(int day) {
+        if (player.getHealth() <= 0) return;
         System.out.println(" ");
+
         morning(day);
+        if (player.getHealth() <= 0) return;
         System.out.println(" ");
         System.out.println("Tryck enter för att fortsätta.");
         String pause = scan.nextLine();
+
         lessonOne();
+        if (player.getHealth() <= 0) return;
         System.out.println(" ");
         System.out.println("Tryck enter för att fortsätta.");
         pause = scan.nextLine();
         System.out.println("------------------------------------------------------------------------------------------------------------");
         System.out.println(" ");
+
         lunch();
+        if (player.getHealth() <= 0) return;
         System.out.println(" ");
         System.out.println("Tryck enter för att fortsätta.");
         pause = scan.nextLine();
         System.out.println("------------------------------------------------------------------------------------------------------------");
         System.out.println(" ");
+
         evening();
+        if (player.getHealth() <= 0) return;
         System.out.println("Tryck enter för att fortsätta.");
         pause = scan.nextLine();
     }
@@ -327,7 +360,6 @@ public class Game {
             System.out.println("Du har försovit dig och missade tentan. Du är körd!");
             System.out.println(" ");
             System.out.println("##### GAME OVER ###################################################################");
-            menu.startMenu();
         } else {
             startExam();
         }
@@ -339,7 +371,6 @@ public class Game {
      * Player may fail, get G, VG or MVG+++.
      */
     public void startExam() {
-
         if (player.getKnowledge() <= 49) {
             System.out.println("Nae, det här gick inget vidare. Du failade hårt och inser att du borde ha pluggat mer.");
             System.out.println("GAME OVER");
@@ -355,11 +386,15 @@ public class Game {
 
     public boolean getIsLate() {
         return late;
-
-
     }
 
+
 }
+
+
+
+
+
 
 
 
