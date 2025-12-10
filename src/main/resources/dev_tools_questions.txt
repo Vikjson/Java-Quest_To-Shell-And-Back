@@ -1,10 +1,88 @@
-Vilket Maven-kommando tar bort target-katalogen och kompilerar projektet på nytt?%n1. mvn clean package%n2. mvn compile%n3. mvn install;1;DEVTOOLS;3;Bra jobbat, du kan verkligen det här med Maven-kommandon!
-Vilken fil beskriver ett Maven-projekts beroenden och plugins?%n1. settings.xml%n2. pom.xml%n3. build.gradle;2;DEVTOOLS;2;Snyggt! Du har koll på hur Maven-projekt är uppbyggda!
-Vilken Gradle-fil används när man skriver Gradle i Kotlin?%n1. build.gradle%n2. gradle.settings%n3. build.gradle.kts;3;DEVTOOLS;2;Bra! Du verkar ha örnkoll på Gradle och dess syntax!
-Vilket kommando installerar alla beroenden i ett Maven-projekt?%n1. mvn install%n2. mvn fetch%n3. mvn deps;1;DEVTOOLS;2;Strålande! Du vet hur Maven hanterar beroenden!
-Vad gör kommandot 'git status'?%n1. Visar aktuellt repositorys alla commits%n2. Visar förändringar i arbetskatalogen%n3. Pushar ändringar till remote;2;DEVTOOLS;2;Bra jobbat, du vet hur man navigerar Git som ett proffs!
-Vad gör kommandot 'git restore --staged <fil>'?%n1. Tar bort filen permanent%n2. Flyttar filen från staged till unstaged%n3. Återställer filen till tidigare commit;2;DEVTOOLS;3;Riktigt bra! Du förstår hur staging-området fungerar i Git!
-Vad gör 'docker ps'?%n1. Startar en container%n2. Visar aktiva containers%n3. Visar Docker-versionen;2;DEVTOOLS;2;Snyggt! Du har koll på Docker-kommandon!
-Vad betyder det om ett Maven-plugin ligger under <build>-sektionen?%n1. Det körs automatiskt vid varje commit%n2. Det används av Maven under byggprocessen%n3. Det installeras som ett globalt plugin;2;DEVTOOLS;3;Bra jobbat! Du förstår hur Maven bygger upp sin pipeline!
-Vad gör 'mvn clean install'?%n1. Rensar target, kompilerar och installerar artefakten i lokala repositoryt%n2. Startar en testserver%n3. Installerar Java;1;DEVTOOLS;5;Imponerande! Du har full koll på ett av Mavens viktigaste kommandon!
-Vilket alternativ beskriver en Git-branch korrekt?%n1. En fristående tidslinje av commits%n2. Ett program som startar Git%n3. En lokal kopia av HEAD;1;DEVTOOLS;3;Fantastiskt! Du kan verkligen det här med versionshantering!
+Vilket Maven-kommando rensar projektet och bygger om allt från början?%n1. mvn clean install%n2. mvn run%n3. mvn purge;1;DEVTOOLS;3;Grymt! Du har full koll på hur man bygger från scratch!
+Vilken fil ligger i roten av ett Maven-projekt?%n1. pom.xml%n2. build.gradle%n3. mvnw.cmd;1;DEVTOOLS;2;Klockrent! Maven utan pom.xml är som kaffe utan koffein!
+Vad gör kommandot ‘mvn compile’?%n1. Kompilerar koden%n2. Installerar beroenden%n3. Startar en server;1;DEVTOOLS;2;Snyggt! Du kan grunderna i Maven-flödet!
+Vad gör ‘mvn test’?%n1. Kör projektets tester%n2. Tar bort target%n3. Installerar projektet lokalt;1;DEVTOOLS;2;Bra! Du kör tester som ett proffs!
+Vilket kommando visar vilka beroenden Maven använder?%n1. mvn dependency:tree%n2. mvn show dependencies%n3. mvn ls;1;DEVTOOLS;3;Strong! Dependency-trädet har ingen chans mot dig!
+Vad gör ‘mvn package’?%n1. Skapar en kompilerad artefakt%n2. Startar Docker%n3. Installerar plugins;1;DEVTOOLS;2;Perfekt! Du kan packa dina artefakter!
+Vilket kommando körs av Git för att lägga till alla filer?%n1. git add .%n2. git include%n3. git stage all;1;DEVTOOLS;2;Snyggt, du vet hur man stage:ar allt!
+Vad gör ‘git diff’?%n1. Visar skillnader i filer%n2. Visar commits%n3. Visar merge-konflikter automatiskt;1;DEVTOOLS;2;Starkt jobbat! Du ser skillnaderna klart och tydligt!
+Vad gör ‘git log --oneline’?%n1. Visar commits kompakt%n2. Visar alla filer%n3. Uppdaterar remote;1;DEVTOOLS;3;Nice! Du har örnkoll på commit-historik!
+Vilket kommando skapar en ny Git-branch?%n1. git branch namn%n2. git new namn%n3. git checkout namn;1;DEVTOOLS;2;Bra — branch-master!
+
+Vad gör ‘git checkout -b dev’?%n1. Skapar och byter till en ny branch%n2. Tar bort en branch%n3. Visar alla branches;1;DEVTOOLS;3;Yes! Du byter branch som en ninja!
+Vad betyder ‘git pull’?%n1. Hämtar och mergar från remote%n2. Laddar upp till remote%n3. Förstör lokala ändringar;1;DEVTOOLS;2;Toppenjobbat! Pull är livets vatten!
+Vad gör ‘git push’?%n1. Skickar commits till remote%n2. Hämtar ändringar%n3. Visar status;1;DEVTOOLS;2;Snyggt! Push som ett proffs!
+Vad betyder ‘git fetch’?%n1. Hämtar utan merge%n2. Hämtar och mergar%n3. Tar bort origin;1;DEVTOOLS;3;Klockrent! Fetch är din bästa vän!
+Vad används .gitignore till?%n1. Ignorera filer från Git%n2. Kompilera projekt%n3. Visa loggar;1;DEVTOOLS;2;Du har stenkoll på ignore-filer!
+
+Vad gör Dockerfile?%n1. Beskriver hur en container byggs%n2. Startar containrar%n3. Hanterar Git;1;DEVTOOLS;2;Snyggt! Du bygger containrar som ett proffs!
+Vad gör ‘docker build’?%n1. Bygger en image%n2. Startar alla containrar%n3. Visar containers;1;DEVTOOLS;3;Snyggt jobbat! Dina images blir flawless!
+Vad gör ‘docker run’?%n1. Startar en container%n2. Stoppar containers%n3. Tar bort images;1;DEVTOOLS;2;Du kör containrar som en chef!
+Vad gör ‘docker stop’?%n1. Stoppar container%n2. Startar container%n3. Visar info;1;DEVTOOLS;2;Härligt! Du stoppar dem helt rätt!
+Vad gör ‘docker rm’?%n1. Tar bort containrar%n2. Tar bort images%n3. Tar bort nätverk;1;DEVTOOLS;2;Snyggt — containers bort!
+
+Vad visar ‘docker images’?%n1. Alla images%n2. Alla körande containers%n3. All metadata;1;DEVTOOLS;2;Toppen! Du känner dina images!
+Vad gör ‘docker rmi’?%n1. Tar bort images%n2. Restartar dem%n3. Visar image-historik;1;DEVTOOLS;3;Starkt! Du gör rent i docker-hyllorna!
+Vad betyder -p i docker run?%n1. Mappar portar%n2. Mappar volymer%n3. Stoppar processen;1;DEVTOOLS;3;Du är en port-mästare!
+Vad gör ‘docker exec -it’?%n1. Kör kommandon i en container%n2. Tar bort container%n3. Visar volymer;1;DEVTOOLS;3;Jävlar vad bra du kan Docker!
+Vilket verktyg använder man för att visualisera Docker-resurser?%n1. Docker Desktop%n2. Maven%n3. GitHub;1;DEVTOOLS;2;Jajemän! Docker Desktop är guld!
+
+Vad gör Jenkins?%n1. Automatiserar bygg och deploy%n2. Ritar UML%n3. Skapar git branches;1;DEVTOOLS;3;Du är en DevOps-kung!
+Vad är en Jenkins-pipeline?%n1. Definierat CI/CD-flöde%n2. En Git-branch%n3. Dockervolym;1;DEVTOOLS;3;Grymt! CI/CD är din hemmaplan!
+Vilken fil används i Jenkins för deklarativ pipeline?%n1. Jenkinsfile%n2. build.gradle%n3. pipeline.conf;1;DEVTOOLS;2;Stabilt! Du vet var pipelinen bor!
+Vad gör stage{} i Jenkinsfile?%n1. Delar upp steg i pipelinen%n2. Skapar en branch%n3. Installerar plugins;1;DEVTOOLS;2;Snyggt! Stage för stage — flawless!
+Vad gör agent any?%n1. Pipeline körs på valfri worker%n2. Kör på master%n3. Avslutar pipeline;1;DEVTOOLS;2;Perfekt! Du kan agent-syntax!
+
+Vad är GitHub Actions?%n1. CI/CD-verktyg%n2. Docker-registry%n3. Filhanterare;1;DEVTOOLS;3;Strong! Du kan modern CI!
+Vad gör en workflow-fil i Actions?%n1. Definierar automation%n2. Visar commits%n3. Lagrar secrets;1;DEVTOOLS;3;Perfekt! Workflows FTW!
+Vilket format använder GitHub Actions workflows?%n1. YAML%n2. JSON%n3. XML;1;DEVTOOLS;2;Snyggt! YAML är Action’s bränsle!
+Vad är ett GitHub secret?%n1. Krypterat värde för tokens%n2. Hemliga branches%n3. Privat README;1;DEVTOOLS;3;Du är säkerhetsmedveten!
+Vad gör ‘git revert’?%n1. Skapar commit som ångrar en commit%n2. Tar bort commit%n3. Ändrar branch;1;DEVTOOLS;3;Grymt jobbat!
+
+Vad gör ‘git reset --hard’?%n1. Återställer arbetsträd och index%n2. Tar bort repository%n3. Installerar om Git;1;DEVTOOLS;5;Modigt! Hårda resets är farliga!
+Vad gör merge-konflikter?%n1. Två ändringar på samma ställe%n2. Felaktig branch%n3. Fel JDK-version;1;DEVTOOLS;2;Bra! Du kan konflikthantering!
+Vad används .mvn-katalogen till?%n1. Maven wrapper%n2. Docker-volymer%n3. Git-hooks;1;DEVTOOLS;5;Grymt, du fattar Maven wrapper!
+Vad gör mvnw?%n1. Kör Maven utan installation%n2. Bygger docker%n3. Startar server;1;DEVTOOLS;3;Du är en wrapper-wizard!
+Vilket kommando visar nuvarande branch?%n1. git branch%n2. git where%n3. git info;1;DEVTOOLS;2;Snyggt! Du vet var du står!
+
+Vad gör git stash?%n1. Tillfälligt sparar ändringar%n2. Tar bort filer%n3. Merge:ar branches;1;DEVTOOLS;3;Härligt stashat!
+Vad gör git stash pop?%n1. Hämtar stashen och tar bort den%n2. Tar bort branch%n3. Uppdaterar remote;1;DEVTOOLS;3;Proffsigt!
+Vad gör git clone?%n1. Kopierar repo%n2. Tar backup%n3. Installerar Maven;1;DEVTOOLS;2;Självklart — du klonar allt!
+Vad gör git init?%n1. Skapar nytt repo%n2. Hämtar repo%n3. Mergar repo;1;DEVTOOLS;2;Fint jobbat!
+Vad gör git rm?%n1. Tar bort filer från Git%n2. Skapar nya%n3. Återställer filer;1;DEVTOOLS;3;Riktigt bra!
+
+Vilket format använder Gradle Kotlin DSL?%n1. .kts%n2. .kt%n3. .gradlek;1;DEVTOOLS;2;Du är en kts-mästare!
+Vad heter standard-skriptet i Gradle Groovy?%n1. build.gradle%n2. build.groovy%n3. gradle.xml;1;DEVTOOLS;2;Toppen!
+Vad gör gradle tasks?%n1. Visar tillgängliga tasks%n2. Kör tester%n3. Uppdaterar beroenden;1;DEVTOOLS;2;Du har full koll på tasks!
+Vad gör gradle clean?%n1. Tar bort build-katalog%n2. Bygger projekt%n3. Startar server;1;DEVTOOLS;2;Clean and mean!
+Vad gör gradle build?%n1. Bygger projektets artefakter%n2. Rensar%n3. Kör debugger;1;DEVTOOLS;2;Snyggt jobbat!
+
+Vad betyder version i Maven pom.xml?%n1. Projektets version%n2. Antal moduler%n3. SDK-version;1;DEVTOOLS;2;Bra arbete!
+Vad är en dependency i Maven?%n1. Externt bibliotek%n2. Docker-image%n3. Git-branch;1;DEVTOOLS;2;Snyggt!
+Vad gör <scope> i Maven?%n1. Styr hur beroenden används%n2. Kompilerar%n3. Installerar;1;DEVTOOLS;3;Bra koll!
+Vad betyder maven-scope “test”?%n1. Beroende används bara vid tester%n2. Bara production%n3. Vid docker;1;DEVTOOLS;2;Perfekt!
+Vad gör pluginManagement?%n1. Hanterar plugin-versioner%n2. Startar pipeline%n3. Installerar JDK;1;DEVTOOLS;5;Imponerande Maven-skills!
+
+Vad gör git tag?%n1. Märker specifika commits%n2. Skapar branches%n3. Tar bort remotes;1;DEVTOOLS;2;Toppen!
+Vad gör git switch?%n1. Byter branch%n2. Tar bort branch%n3. Visar branchlista;1;DEVTOOLS;2;Riktigt bra!
+Vad gör docker-compose?%n1. Startar flera containrar%n2. Installerar Docker%n3. Hämtar images;1;DEVTOOLS;3;Du är compose-kung!
+Vilken fil styr docker-compose?%n1. docker-compose.yml%n2. compose.txt%n3. dockerfile-compose;1;DEVTOOLS;2;Yes!
+Vad gör “docker compose up”?%n1. Startar alla definierade tjänster%n2. Rensar images%n3. Avinstallerar docker;1;DEVTOOLS;2;Snyggt!
+
+Vad gör git merge?%n1. Slår ihop två branches%n2. Tar bort local%n3. Packar repot;1;DEVTOOLS;3;Starkt!
+Vad gör git rebase?%n1. Flyttar commits%n2. Klonar%n3. Installerar plugins;1;DEVTOOLS;5;Pro-level!
+Vad gör --amend i Git?%n1. Ändrar senaste commit%n2. Skapar tag%n3. Tar bort log;1;DEVTOOLS;3;Du fixar commits som en kirurg!
+Vad gör git blame?%n1. Visar vem som ändrat varje rad%n2. Skäller på användaren%n3. Kör tester;1;DEVTOOLS;3;Du är obehagligt bra på blame!
+Vad gör git clean -fd?%n1. Tar bort otrackade filer%n2. Mergar%n3. Byter branch;1;DEVTOOLS;5;Farligt kraftfullt — bra där!
+
+Vad betyder SDKMAN?%n1. Versionshanterare för Java-verktyg%n2. Debugger%n3. Git plugin;1;DEVTOOLS;3;Yes!
+Vad gör java -jar?%n1. Kör en JAR-fil%n2. Kompilerar%n3. Installerar beroenden;1;DEVTOOLS;2;Stabilt!
+Vad gör javac?%n1. Kompilerar Java-filer%n2. Kör JVM%n3. Startar docker;1;DEVTOOLS;2;Bra!
+Vad är PATH?%n1. Lista med sökvägar för program%n2. Git-logg%n3. Maven-projekt;1;DEVTOOLS;3;Du är systemmiljö-expert!
+Vad är JAVA_HOME?%n1. Pekar på JDK-installationen%n2. Pekar på projektmappen%n3. Pekar på Maven;1;DEVTOOLS;2;Toppen!
+
+Vad gör IntelliJ shortcut Shift+F10?%n1. Kör program%n2. Rensar%n3. Öppnar settings;1;DEVTOOLS;2;Nice!
+Vad gör F8 i debug mode?%n1. Step over%n2. Step into%n3. Stoppa;1;DEVTOOLS;2;Perfekt!
+Vad gör F7 i debug?%n1. Step into%n2. Step out%n3. Step over;1;DEVTOOLS;2;Snyggt!
+Vad är en build artifact i IntelliJ?%n1. Utdata som kan köras%n2. Backup%n3. Plugin;1;DEVTOOLS;3;Starkt!
+Vad gör “Invalidate Caches / Restart” i IntelliJ?%n1. Rensar index%n2. Installerar JDK%n3. Tar bort projekt;1;DEVTOOLS;2;Du är IntelliJ-proffs!

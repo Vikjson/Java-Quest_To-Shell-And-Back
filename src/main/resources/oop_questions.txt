@@ -1,10 +1,99 @@
-Vad betyder det att en klass implementerar ett interface?%n1. Klassen ärver alla metoder automatiskt%n2. Klassen lovar att implementera interfacets metoder%n3. Klassen blir abstrakt;2;OOP;2;Snyggt! Du förstår hur interface fungerar i Java!
-Vad är ett objekt i Java?%n1. En instans av en klass%n2. En typ av interface%n3. Ett paket;1;OOP;2;Bra jobbat, objektorientering sitter ju som en smäck!
-Vad är syftet med en konstruktor?%n1. Att skapa ett nytt objekt och initiera variabler%n2. Att kompilera klassen%n3. Att ta bort objekt från minnet;1;OOP;2;Yes! Konstruktorer är inga problem för dig!
-Vad är inkapsling?%n1. Att dölja data och exponera beteende via metoder%n2. Att kombinera flera interface%n3. Att skapa nya trådar;1;OOP;3;Riktigt bra – inkapsling är en kärna i OOP och du nailade det!
-Vad är arv i Java?%n1. När en klass tar bort metoder från en annan klass%n2. När en klass återanvänder kod från en förälderklass%n3. När man kopierar objekt manuellt;2;OOP;2;Snyggt, du kan det här med arv!
-Vad betyder 'final' på en variabel?%n1. Den kan inte ändras efter första tilldelningen%n2. Den är global%n3. Den är privat;1;OOP;2;Kanon, du vet hur man säkrar värden i Java!
-Vad är polymorfism?%n1. Att flera objekt kan få olika typer slumpmässigt%n2. Att en metod kan bete sig olika beroende på objektet som anropar den%n3. Att en klass kan skapa flera interface;2;OOP;5;Imponerande! Polymorfism är högnivå-OOP och du satte den!
-Vad är en abstrakt klass?%n1. En klass som inte kan instansieras%n2. En klass som saknar variabler%n3. En klass som är helt tom;1;OOP;3;Bra jobbat! Du har koll på abstrakta koncept!
-Vad är syftet med 'this' i Java?%n1. Att skapa nya objekt%n2. Att referera till det aktuella objektet%n3. Att radera variabler;2;OOP;2;Strålande! Du förstår hur this används korrekt!
-Vad är ett record i Java?%n1. En klass som fokuserar på immutable data och auto-genererar metoder%n2. En typ av enum%n3. Ett interface med extra steg;1;OOP;5;Starkt jobbat! Du har grepp om moderna Java-begrepp!
+Vad innebär inkapsling i OOP?%n1. Att skydda data genom att exponera beteende via metoder%n2. Att dölja hela klassen%n3. Att alltid använda public;1;OOP;3;Snyggt! Du fattar hur man skyddar data i OOP!
+Vad gör en konstruktor?%n1. Initierar objektets tillstånd%n2. Körs när objektet förstörs%n3. Skapar en klassfil;1;OOP;2;Bra där! Konstruktorer är objektens startmotor!
+Vad betyder arv i Java?%n1. En klass återanvänder kod från en förälderklass%n2. En klass kopierar en annan klass manuellt%n3. En klass blir abstrakt automatiskt;1;OOP;2;Snyggt, du kan det här med arv!
+Vad är polymorfism?%n1. Samma metodnamn men olika beteende beroende på objekt%n2. Att duplicera klasser%n3. Att en klass alltid är final;1;OOP;5;Imponerande! Du bemästrar polymorfism!
+Vad gör nyckelordet this?%n1. Refererar till det aktuella objektet%n2. Avslutar programmet%n3. Skapar ett nytt objekt;1;OOP;2;Bra jobbat! this är superviktigt i Java!
+Vad betyder det att en metod är överlagrad (overloaded)?%n1. Samma namn men olika parametrar%n2. Samma namn och exakt samma signatur%n3. En metod som ropar på sig själv;1;OOP;3;Härligt! Du förstår method overloading!
+Vad betyder det att en metod är överskuggad (overridden)?%n1. En subklass skriver om en metod från superklassen%n2. En metod körs två gånger%n3. En metod blir statisk;1;OOP;3;Toppen! Du har koll på overriding!
+Vad innebär komposition?%n1. Att ett objekt består av andra objekt%n2. Att en klass ärver en annan%n3. Att man kombinerar flera interface;1;OOP;3;Bra! Komposition är riktig OOP!
+Vad är syftet med ett interface?%n1. Att definiera ett kontrakt som klasser kan implementera%n2. Att lagra alla variabler%n3. Att köra programmet;1;OOP;3;Klockrent! Du kan interface!
+Vad betyder implements på en klass?%n1. Klassen lovar att implementera interfacets metoder%n2. Klassen ärver en annan klass%n3. Klassen blir abstrakt;1;OOP;2;Bra där! Du vet hur man följer kontrakt i Java!
+
+Vad ger protected åtkomst till?%n1. Klassen själv, subklasser och klasser i samma paket%n2. Endast klassen själv%n3. Alla klasser överallt;1;OOP;3;Snyggt! Protected är guld vid arv!
+Vad betyder private?%n1. Endast klassen själv kommer åt medlemmen%n2. Alla subklasser når den%n3. Alla i samma paket når den;1;OOP;2;Bra! Du förstår inkapsling!
+Vad är en abstrakt metod?%n1. En metod utan implementation%n2. En metod som är static%n3. En metod som inte får anropas;1;OOP;3;Starkt jobbat! Abstraktion på hög nivå!
+Vad är en abstrakt klass?%n1. En klass som inte kan instansieras%n2. En klass utan variabler%n3. En klass där alla metoder är private;1;OOP;3;Bra jobbat! Du fattar abstrakta klasser!
+Vad är ett UML-klassdiagram?%n1. En visuell modell av klasser och relationer%n2. En runtime-logg%n3. En bild av filstrukturen;1;OOP;2;Snyggt! Du kan UML-grunderna!
+Vad beskriver en association i UML?%n1. Att ett objekt refererar till ett annat%n2. Att en klass ärver en annan%n3. Att en metod överskuggas;1;OOP;2;Härligt! Du har UML-koll!
+Vad betyder aggregation i UML?%n1. En svag helhet/del-relation%n2. En stark delrelation där delarna dör med helheten%n3. En ren arv-relation;1;OOP;3;Bra! Aggregation vs komposition sitter där!
+Vad betyder komposition i UML?%n1. Stark helhet/del-relation där delarna försvinner med helheten%n2. Att metoder är privata%n3. Att en klass är final;1;OOP;3;Snyggt! Du nailade komposition!
+Vad symboliserar en fylld diamant i UML?%n1. Komposition%n2. Aggregation%n3. Arv;1;OOP;2;Du är en UML-legend!
+Vad betyder dependency i UML?%n1. En klass använder en annan klass%n2. Arv%n3. En slumpmässig koppling;1;OOP;2;Snyggt jobbat! Du kan UML-relationer!
+
+Vad gör metoden equals()?%n1. Jämför objektens logiska likhet%n2. Jämför bara minnesadresser%n3. Sorterar objekt;1;OOP;3;Bra! equals är fundamentalt i Java!
+Vad gör hashCode()?%n1. Returnerar ett hashvärde för objektet%n2. Ritar ASCII-grafik%n3. Kompilerar koden;1;OOP;3;Du förstår hashning, grymt!
+Vad måste gälla mellan equals och hashCode?%n1. Om equals är true ska hashCode vara samma%n2. hashCode måste alltid vara unikt%n3. equals får aldrig vara true;1;OOP;5;Fantastiskt! Du kan kontraktet equals/hashCode!
+Vad gör compareTo() enligt Comparable?%n1. Returnerar negativt, noll eller positivt beroende på ordning%n2. Returnerar alltid boolean%n3. Printar objektet;1;OOP;3;Snyggt! Comparable är ditt game!
+Vad är syftet med Comparator?%n1. Att definiera extern sorteringslogik%n2. Att kompilera klasser%n3. Att logga fel;1;OOP;3;Bra jobbat! Du fattar Comparator!
+Vad är generics till för?%n1. Typsäkerhet och återanvändbarhet med typparametrar%n2. Snabbare CPU%n3. Mindre minne;1;OOP;3;Det där satt perfekt!
+Vad betyder <T> i Java-kod?%n1. En typparameter%n2. En konstant%n3. En filtyp;1;OOP;2;Fint! Du kan grunderna i generics!
+Vad gör wildcarden <?>?%n1. Tillåter valfri referenstyp%n2. Tillåter bara int%n3. Tillåter inga typer;1;OOP;3;Toppen! Wildcards kan vara knepiga!
+Vad betyder <? extends Number>?%n1. Alla typer som är Number eller subtyper%n2. Bara Number%n3. Alla typer i hela JVM:en;1;OOP;5;Imponerande! Bounded generics är inte lätt!
+Vad betyder <? super Integer>?%n1. Alla supertyper till Integer%n2. Alla subtyper till Integer%n3. Endast Integer;1;OOP;5;Bravo! Du har stenkoll på PECS!
+
+Vad gör ett record i Java?%n1. Skapar en datastruktur med immutabla fält och auto-genererade metoder%n2. Gör klassen abstrakt%n3. Gör klassen till ett interface;1;OOP;3;Starkt jobbat med records!
+Vilka metoder genererar ett record automatiskt?%n1. equals, hashCode, toString%n2. main, run, start%n3. open, close, flush;1;OOP;2;Bra! Records är bekväma att jobba med!
+Vad är en viktig skillnad mellan en vanlig klass och ett record?%n1. Records är designade för immutabel data%n2. Records kan inte ha metoder%n3. Records kan inte implementera interface;1;OOP;5;Snyggt! Du har modern Java-koll!
+Vad är en omslagsklass (wrapper)?%n1. En klass som representerar ett primitivt värde som objekt%n2. En klass som komprimerar filer%n3. En klass som alltid är abstrakt;1;OOP;2;Bra koll på wrappers!
+Vilken omslagsklass motsvarar int?%n1. Integer%n2. IntClass%n3. NumberInt;1;OOP;2;Snyggt jobbat!
+Vad är autoboxing?%n1. Automatisk konvertering från primitive till wrapper%n2. Automatisk kast mellan alla typer%n3. Automatisk serialisering;1;OOP;2;Bra! Autoboxing gör livet enklare!
+Vad är unboxing?%n1. Konvertering från wrapper till primitive%n2. Konvertering från String till Object%n3. Konvertering från interface till klass;1;OOP;2;Klockrent!
+Vad är en enum?%n1. En typ med ett begränsat antal fördefinierade värden%n2. En dynamisk lista%n3. En sorts interface;1;OOP;2;Bra! Enums är enkla men kraftfulla!
+Vad är syftet med annoteringar (annotations)?%n1. Lägga metadata på kod%n2. Kompilera snabbare%n3. Hantera nätverk;1;OOP;3;Nice! Du fattar annoteringar!
+Vad gör @Override?%n1. Markerar att en metod överskuggar en metod i superklass eller interface%n2. Gör metoden privat%n3. Gör metoden statisk;1;OOP;2;Bra jobbat!
+
+Vad är en List i Java?%n1. En ordnad samling där element har index%n2. En samling utan ordning%n3. En kö med prioritet;1;OOP;2;Snyggt!
+Vad är ett Set i Java?%n1. En samling utan dubbletter%n2. En strikt sorterad lista%n3. En stack;1;OOP;2;Bra! Du fattar Set!
+Vad är en Map?%n1. En struktur med nyckel–värde-par%n2. En ordnad lista%n3. En array;1;OOP;2;Toppen!
+Vad betyder index i en lista?%n1. Positionen för ett element%n2. Antalet element i listan%n3. Ett slumpmässigt tal;1;OOP;2;Snyggt!
+Vad är en ArrayList?%n1. En lista som bygger på en dynamisk array%n2. En lista som bygger på länkade noder%n3. En tråd-säker lista;1;OOP;2;Bra jobbat!
+
+Vad är en LinkedList?%n1. En lista uppbyggd av noder som pekar på varandra%n2. En lista med hashning%n3. En typ av array;1;OOP;3;Starkt jobbat!
+Vad är en Queue?%n1. En FIFO-struktur%n2. En LIFO-struktur%n3. En sorts Map;1;OOP;2;Snyggt!
+Vad är en Stack?%n1. En LIFO-struktur%n2. En FIFO-struktur%n3. En trädstruktur;1;OOP;2;Bra!
+Vad betyder try-catch i Java?%n1. Hantera undantag runt kod som kan krascha%n2. Kompilera koden%n3. Sortera listor;1;OOP;2;Grymt! Du har koll på exceptions!
+Vad gör ett finally-block?%n1. Körs alltid (om det exekveras) efter try/catch%n2. Körs aldrig%n3. Körs bara om ett undantag kastas;1;OOP;2;Toppen!
+
+Vad är ett checked exception?%n1. Ett undantag som måste hanteras eller deklareras%n2. Ett undantag man kan ignorera%n3. Ett syntaxfel;1;OOP;3;Bra!
+Vad är ett unchecked exception?%n1. Ett undantag som är RuntimeException eller subklass%n2. Ett undantag som måste hanteras%n3. Ett fel vid kompilering;1;OOP;3;Snyggt!
+Vad gör nyckelordet throw?%n1. Kastar ett undantag explicit%n2. Fångar undantag%n3. Avslutar programmet;1;OOP;2;Bra där!
+Vad gör throws i en metodsignatur?%n1. Deklarerar att metoden kan kasta ett visst undantag%n2. Fångar undantag%n3. Gör metoden abstrakt;1;OOP;3;Toppen!
+Vad är en stacktrace?%n1. En utskrift av anropskedjan vid ett undantag%n2. En lista med alla objekt%n3. En logg över CPU-användning;1;OOP;2;Nice job!
+
+Vad betyder lambda-uttryck i Java?%n1. Ett anonymt funktionsliknande block%n2. Ett speciellt enum%n3. En typ av klassvariabel;1;OOP;3;Härligt!
+Vad är ett funktionellt interface?%n1. Ett interface med exakt en abstrakt metod%n2. Ett interface utan metoder%n3. Ett interface med bara static-metoder;1;OOP;3;Toppen!
+Vad gör map i en stream?%n1. Omvandlar varje element till ett nytt värde%n2. Filtrerar bort element%n3. Slår ihop elementen;1;OOP;3;Snyggt jobbat!
+Vad gör filter i en stream?%n1. Tar bort element som inte matchar ett villkor%n2. Sorterar element%n3. Räknar element;1;OOP;2;Du börjar bli farligt bra!
+Vad gör reduce i en stream?%n1. Kombinerar alla element till ett enda resultat%n2. Splittar listor%n3. Skapar nya trådar;1;OOP;5;Imponerande!
+
+Vad gör sorted() i streams?%n1. Sorterar elementen%n2. Tar bort dubbletter%n3. Avslutar streamen;1;OOP;2;Bra jobbat!
+Vad gör collect()?%n1. Samlar streamens resultat till en samling eller annat mål%n2. Kompilerar koden%n3. Startar garbage collection;1;OOP;3;Snyggt!
+Vad är skillnaden mellan stream() och parallelStream()?%n1. parallelStream kan använda flera trådar%n2. stream fungerar bara på List%n3. parallelStream är alltid snabbare;1;OOP;5;Riktigt bra koll på streams!
+Vad är en metodreferens (::)?%n1. Ett kortare sätt att skriva ett lambda-uttryck%n2. En specialklass%n3. En typ av enum;1;OOP;3;Bra där!
+Vad betyder immutable?%n1. Att objektets tillstånd inte kan ändras%n2. Att klassen inte kan kompileras%n3. Att objektet alltid är null;1;OOP;3;Starkt jobbat!
+
+Vad är en instansvariabel?%n1. Ett fält som hör till varje objekt%n2. En variabel som är static%n3. En lokal variabel i en metod;1;OOP;2;Bra!
+Vad är en klassvariabel?%n1. Ett static-fält som delas av alla instanser%n2. Ett final-fält%n3. En variabel i main-metoden;1;OOP;2;Du är grym!
+Vad gör toString()?%n1. Returnerar en textrepresentation av objektet%n2. Jämför objekt%n3. Startar programmet;1;OOP;2;Toppen!
+Vad gör getClass()?%n1. Returnerar objektets klass-objekt%n2. Startar garbage collector%n3. Sorterar en lista;1;OOP;2;Nice!
+Vad betyder final på en klass?%n1. Klassen kan inte ärvas%n2. Klassen kan inte instansieras%n3. Klassen måste vara abstrakt;1;OOP;2;Bra jobbat!
+
+Vad betyder final på en metod?%n1. Metoden kan inte överskuggas%n2. Metoden kan inte anropas%n3. Metoden blir static;1;OOP;2;Starkt jobbat!
+Vad betyder final på ett fält?%n1. Värdet kan inte ändras efter tilldelning%n2. Fältet är private%n3. Fältet blir transient;1;OOP;2;Bra koll!
+Vad gör instanceof?%n1. Kontrollerar om ett objekt är av en viss typ%n2. Skapar ett nytt objekt%n3. Serialiserar ett objekt;1;OOP;2;Snyggt!
+Vad är en typkonvertering (casting)?%n1. Att tala om för compilern vilken typ ett objekt ska behandlas som%n2. Att spara objekt på disk%n3. Att ta bort objekt ur minnet;1;OOP;3;Bra!
+Vad är en upcast?%n1. Att behandla en subklass som sin superklass%n2. Att behandla superklass som subklass%n3. Att göra en String till int;1;OOP;2;Toppen!
+
+Vad är en downcast?%n1. Att försöka behandla en superklassreferens som en subklass%n2. Att gå från subklass till interface%n3. Att casta till Object;1;OOP;3;Snyggt!
+Vad är shallow copy?%n1. Kopierar referenser men inte underliggande objekt%n2. Kopierar hela objektstrukturen%n3. Ingen kopia alls;1;OOP;3;Solid kunskap där!
+Vad är deep copy?%n1. Kopierar hela objektstrukturen rekursivt%n2. Kopierar bara referensen%n3. Kopierar bara primitiva fält;1;OOP;5;Imponerande förståelse!
+Vad är cohesion (sammanhållning)?%n1. Hur väl en klass håller sig till ett tydligt ansvar%n2. Hur tätt kopplade klasser är%n3. Hur snabbt koden körs;1;OOP;3;Bra OOP-design!
+Vad är coupling (koppling)?%n1. Hur beroende klasser är av varandra%n2. Hur mycket minne som används%n3. Hur många metoder en klass har;1;OOP;3;Snyggt!
+
+Vad står SRP i SOLID för?%n1. Single Responsibility Principle%n2. Single Resource Pattern%n3. Static Responsibility Principle;1;OOP;5;Bra där! SOLID-koncepten sitter!
+Vad står OCP i SOLID för?%n1. Open/Closed Principle%n2. Object/Class Principle%n3. Optional Casting Process;1;OOP;5;Toppen! Du kan SOLID!
+Vad är en getter?%n1. En metod som returnerar ett fälts värde%n2. En metod som tar bort objekt%n3. En metod som loggar;1;OOP;2;Bra!
+Vad är en setter?%n1. En metod som ändrar ett fälts värde%n2. En metod som kompilerar%n3. En metod som startar en tråd;1;OOP;2;Fint!
+Vad är en referens i Java?%n1. En pekare till ett objekt i minnet%n2. En fil på disk%n3. En CPU-register;1;OOP;2;Bra kunskap!
+
+Vad händer om du jämför strängar med == ?%n1. Du jämför referenser, inte innehåll%n2. Du jämför alltid innehållet%n3. Du konkatenerar strängar;1;OOP;3;Snyggt jobbat – många går bet här!
