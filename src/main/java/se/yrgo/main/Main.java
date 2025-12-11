@@ -1,9 +1,10 @@
 package se.yrgo.main;
 
+import java.util.Scanner;
 import se.yrgo.game.*;
 import se.yrgo.player.*;
 import se.yrgo.teachers.*;
-import java.util.Scanner;
+
 
 
 public class Main {
